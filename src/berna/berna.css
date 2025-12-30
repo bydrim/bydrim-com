@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url('bg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* Add dots under the hoverable text */
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    /* Hidden by default */
+    width: 140px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    /* Ensure tooltip is displayed above content */
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    /* Use half of the width (130/2 = 65), to center the tooltip */
+    margin-left: -65px;
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+main {
+    margin: 0;
+    padding: 0 2rem 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rainbow-text {
+    font-size: 5rem;
+    font-weight: 900;
+    /* rainbow gradient */
+    /* background: radial-gradient(circle,
+            #ff1a1a, #ff8c1a, #ffea1a, #5aff1a, #1affea, #1a6bff, #b61aff, #ff1a7a);*/
+        background: radial-gradient(circle,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+
+    background-size: 200% 150%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
