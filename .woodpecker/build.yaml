@@ -11,4 +11,4 @@ steps:
     commands:
       - ./build.sh
     volumes:
-      - /woodpecker-output/bydrim-com:/woodpecker/bydrim-com/outputs
+      - /woodpecker-outputs/bydrim-com:/woodpecker/bydrim-com/outputs
