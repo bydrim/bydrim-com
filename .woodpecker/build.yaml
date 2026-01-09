@@ -7,7 +7,7 @@ workspace:
 
 steps:
   - name: build
-    image: alpine
+    image: bash
     commands:
       - ./build.sh
     volumes:
