@@ -1,0 +1,14 @@
+when:
+  - event: manual
+
+workspace:
+  base: /woodpecker # default
+  path: bydrim-com # this resolves as /woodpecker/bydrim-com
+
+steps:
+  - name: build
+    image: alpine
+    commands:
+      - ./build.sh
+    volumes:
+      - /woodpecker-output/bydrim-com:/woodpecker/bydrim-com/outputs
