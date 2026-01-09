@@ -7,7 +7,7 @@ workspace:
 
 steps:
   - name: build
-    image: bash
+    image: debian:stable
     commands:
       - ./build.sh
     volumes:
