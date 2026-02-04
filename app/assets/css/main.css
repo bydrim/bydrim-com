@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+    name: "everforest-dark";
+    default: true;
+    prefersdark: true;
+    /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: dark;
+    /* color of browser-provided UI */
+
+    /* Base colors - using dark background variants */
+    --color-base-100: oklch(25% 0.015 145);
+    /* #2D353B - Background 0 */
+    --color-base-200: oklch(23% 0.015 145);
+    /* #343F44 - Background 1 */
+    --color-base-300: oklch(28% 0.015 145);
+    /* #3D484D - Background 2 */
+    --color-base-content: oklch(82% 0.02 85);
+    /* #D3C6AA - Foreground */
+
+    /* Primary - using Green */
+    --color-primary: oklch(72% 0.08 140);
+    /* #A7C080 - Green */
+    --color-primary-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Secondary - using Blue */
+    --color-secondary: oklch(70% 0.06 200);
+    /* #7FBBB3 - Blue */
+    --color-secondary-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Accent - using Aqua */
+    --color-accent: oklch(72% 0.08 165);
+    /* #83C092 - Aqua */
+    --color-accent-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Neutral - using Grey */
+    --color-neutral: oklch(55% 0.015 145);
+    /* #859289 - Grey 1 */
+    --color-neutral-content: oklch(82% 0.02 85);
+    /* #D3C6AA - Foreground */
+
+    /* Info - using Blue */
+    --color-info: oklch(70% 0.06 200);
+    /* #7FBBB3 - Blue */
+    --color-info-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Success - using Green */
+    --color-success: oklch(72% 0.08 140);
+    /* #A7C080 - Green */
+    --color-success-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Warning - using Yellow */
+    --color-warning: oklch(78% 0.1 85);
+    /* #DBBC7F - Yellow */
+    --color-warning-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* Error - using Red */
+    --color-error: oklch(68% 0.12 15);
+    /* #E67E80 - Red */
+    --color-error-content: oklch(25% 0.015 145);
+    /* Dark bg for contrast */
+
+    /* border radius - soft, nature-inspired values */
+    --radius-selector: 0.5rem;
+    --radius-field: 0.375rem;
+    --radius-box: 0.5rem;
+
+    /* base sizes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* border size */
+    --border: 1px;
+
+    /* effects - subtle depth */
+    --depth: 0.5;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "everforest-light";
+    default: false;
+    prefersdark: false;
+    /* not a dark mode theme */
+    color-scheme: light;
+    /* color of browser-provided UI */
+
+    /* Base colors - using light background variants */
+    --color-base-100: oklch(98% 0.015 85);
+    /* #FDF6E3 - Background 0 */
+    --color-base-200: oklch(96% 0.02 85);
+    /* #F4F0D9 - Background 1 */
+    --color-base-300: oklch(94% 0.02 85);
+    /* #EFEBD4 - Background 2 */
+    --color-base-content: oklch(45% 0.02 210);
+    /* #5C6A72 - Foreground */
+
+    /* Primary - using Green */
+    --color-primary: oklch(60% 0.12 130);
+    /* #8DA101 - Green */
+    --color-primary-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* Secondary - using Blue */
+    --color-secondary: oklch(58% 0.12 230);
+    /* #3A94C5 - Blue */
+    --color-secondary-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* Accent - using Aqua */
+    --color-accent: oklch(60% 0.12 165);
+    /* #35A77C - Aqua */
+    --color-accent-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* Neutral - using Grey */
+    --color-neutral: oklch(62% 0.015 145);
+    /* #939F91 - Grey 1 */
+    --color-neutral-content: oklch(45% 0.02 210);
+    /* #5C6A72 - Foreground */
+
+    /* Info - using Blue */
+    --color-info: oklch(58% 0.12 230);
+    /* #3A94C5 - Blue */
+    --color-info-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* Success - using Green */
+    --color-success: oklch(60% 0.12 130);
+    /* #8DA101 - Green */
+    --color-success-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* Warning - using Yellow */
+    --color-warning: oklch(72% 0.16 80);
+    /* #DFA000 - Yellow */
+    --color-warning-content: oklch(45% 0.02 210);
+    /* Dark text for contrast */
+
+    /* Error - using Red */
+    --color-error: oklch(65% 0.2 25);
+    /* #F85552 - Red */
+    --color-error-content: oklch(98% 0.015 85);
+    /* Light bg for contrast */
+
+    /* border radius - soft, nature-inspired values */
+    --radius-selector: 0.5rem;
+    --radius-field: 0.375rem;
+    --radius-box: 0.5rem;
+
+    /* base sizes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* border size */
+    --border: 1px;
+
+    /* effects - subtle depth */
+    --depth: 0.5;
+    --noise: 0;
+}
