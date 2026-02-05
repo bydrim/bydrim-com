@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     devServer: {
         port: 3030
     },
-    css: ["./app/assets/css/main.css"],
+    css: ['./app/assets/css/main.css'],
     vite: {
         plugins: [
             tailwindcss(),
@@ -14,5 +14,10 @@ export default defineNuxtConfig({
     },
     nitro: {
         static: true,
+    },
+    app: {
+        head: {
+            title: 'bydrim',
+        },
     },
 })
