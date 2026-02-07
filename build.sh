@@ -24,7 +24,8 @@ echo "## Copying generated files .."
 if [[ ! -d ./outputs ]]; then
     mkdir ./outputs
 fi
-cp -r ./.outputs/public ./outputs
+# '.output/' is the folder of nuxt. 'outputs' is the folder, with an arbitrary name, to collect build versions.
+cp -r ./.output/public ./outputs
 
 # year month day hour minute second
 timestamp=$(date +%Y%m%d%H%M%S)
