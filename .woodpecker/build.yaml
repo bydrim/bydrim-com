@@ -7,7 +7,7 @@ workspace:
 
 steps:
   - name: build
-    image: debian:stable
+    image: node:24-slim
     commands:
       - ./build.sh
     volumes:
