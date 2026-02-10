@@ -32,7 +32,7 @@
                 large-scale financial systems. My experties lies in full-stack development with a focus on enterprise
                 applications.
             </p>
-            <p class="text-center text-xl mb-6">I am based in Switzerland.</p>
+            <p class="text-center text-xl mb-6">Based in Switzerland.</p>
             <p class="text-center text-xl">
                 You can find me from the links below.
             </p>
