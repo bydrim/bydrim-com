@@ -22,17 +22,18 @@
             </div>
             <p class="text-center text-2xl my-6">Burak Yildirim | Software Engineer</p>
         </div>
-        <div class="max-w-4xl">
+        <div class="flex flex-col items-center max-w-4xl">
             <p class="text-center text-3xl my-6">Hi, I am Burak!</p>
             <p class="text-center text-xl mb-6">
-                I go by <span class="font-extrabold italic">bydrim</span> online. I am a Software Engineer.
+                I go by <span class="font-extrabold italic">bydrim</span> online.
             </p>
             <p class="text-center text-xl mb-6">
-                I have a strong background in developing complex business algorithms and managing large-scale
-                financial systems. I have experience in full-stack development with focus on enterprise applications.
+                I am a Software Engineer with a strong background in developing complex business algorithms and managing
+                large-scale financial systems. My experties lies in full-stack development with a focus on enterprise
+                applications.
             </p>
             <p class="text-center text-xl mb-6">I am based in Switzerland.</p>
-            <p class="text-center text-xl mb-6">
+            <p class="text-center text-xl">
                 You can find me from the links below.
             </p>
             <p class="flex flex-row flex-wrap justify-center items-center gap-4 my-12">
@@ -67,11 +68,15 @@
                     </button>
                 </a>
             </p>
-            <div class="h-6 bg-neutral-950 mb-6 hazard-background"></div>
+            <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
             <p class="text-center text-2xl font-bold mb-6">
                 My website is under heavy development.
             </p>
-            <div class="h-6 bg-neutral-950 mb-6 hazard-background"></div>
+            <progress class="progress progress-primary h-8 w-4/5 mb-6" value="60" max="100"></progress>
+            <p class="text-center text-xl mb-6">
+                %60 completed.
+            </p>
+            <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
         </div>
     </div>
 </template>
