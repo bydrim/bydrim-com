@@ -35,6 +35,10 @@ onMounted(() => {
 #background {
     --fade-in: fadeIn 1s ease-in-out
 }
+
+body * {
+    @apply transition-colors duration-200;
+}
 </style>
 <template>
     <div id="background"
