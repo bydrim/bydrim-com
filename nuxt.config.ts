@@ -20,4 +20,5 @@ export default defineNuxtConfig({
             title: 'bydrim',
         },
     },
+    modules: ['nuxt-svgo'],
 })

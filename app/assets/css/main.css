@@ -10,7 +10,7 @@
     color-scheme: dark;
     /* color of browser-provided UI */
 
-    --background-cover: oklch(0.15 0.015 145 / 80%);
+    --background-cover: oklch(0.25 0.0123 232.92 / 85%);
 
     /* Base colors - using dark background variants */
     --color-base-100: oklch(25% 0.015 145);
@@ -95,17 +95,17 @@
     color-scheme: light;
     /* color of browser-provided UI */
 
-    --background-cover: oklch(90% 0.020 85 / 70%);
+    --background-cover: oklch(0.85 0.0305 98.87 / 85%);
 
     /* Base colors - using light background variants */
-    --color-base-100: oklch(98% 0.015 85);
+    --color-base-100: oklch(0.97 0.027 90.1);
     /* #FDF6E3 - Background 0 */
     --color-base-200: oklch(96% 0.02 85);
     /* #F4F0D9 - Background 1 */
     --color-base-300: oklch(94% 0.02 85);
     /* #EFEBD4 - Background 2 */
-    --color-base-content: oklch(45% 0.02 210);
-    /* #5C6A72 - Foreground oklch(30% 0.02 210) */
+    --color-base-content: oklch(0.5154 0.0212 232.87);
+    /* #5C6A72 - Foreground */
 
     /* Primary - using Green */
     --color-primary: oklch(60% 0.12 130);

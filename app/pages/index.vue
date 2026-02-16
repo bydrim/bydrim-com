@@ -57,7 +57,7 @@
                         <span class="text-xl">LinkedIn</span>
                     </button>
                 </a>
-                <a href="">
+                <a href="https://stackoverflow.com/users/7711454/bydrim">
                     <button class="btn btn-warning py-6 rounded-4xl">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="h-10 w-10 fill-current"
                             fill-rule="evenodd">
@@ -72,9 +72,9 @@
             <p class="text-center text-2xl font-bold mb-6">
                 My website is under heavy development.
             </p>
-            <progress class="progress progress-primary h-8 w-4/5 mb-6" value="60" max="100"></progress>
+            <progress class="progress progress-primary h-8 w-4/5 mb-6" value="68" max="100"></progress>
             <p class="text-center text-xl mb-6">
-                %60 completed.
+                %68 completed.
             </p>
             <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
         </div>
