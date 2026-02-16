@@ -82,8 +82,7 @@ body * {
                 </ul>
             </div>
         </div>
-        <main class="flex flex-col h-full overflow-y-auto">
-            <div class="m-3"></div>
+        <main class="p-3 flex flex-col h-full overflow-y-auto">
             <slot />
         </main>
     </div>
