@@ -37,7 +37,7 @@
                 You can find me from the links below.
             </p>
             <p class="flex flex-row flex-wrap justify-center items-center gap-4 my-12">
-                <a href="https://github.com/bydrim">
+                <a href="https://github.com/bydrim" target="_blank" rel="noopener noreferrer">
                     <button class="btn btn-accent py-6 rounded-4xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 fill-current" viewBox="0 0 496 512">
                             <path
@@ -47,7 +47,7 @@
                         <span class="text-xl">Github</span>
                     </button>
                 </a>
-                <a href="https://www.linkedin.com/in/yildirim-burak/">
+                <a href="https://www.linkedin.com/in/yildirim-burak/" target="_blank" rel="noopener noreferrer">
                     <button class="btn btn-info py-6 rounded-4xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 fill-current" viewBox="0 0 16 16">
                             <path
@@ -57,7 +57,7 @@
                         <span class="text-xl">LinkedIn</span>
                     </button>
                 </a>
-                <a href="https://stackoverflow.com/users/7711454/bydrim">
+                <a href="https://stackoverflow.com/users/7711454/bydrim" target="_blank" rel="noopener noreferrer">
                     <button class="btn btn-warning py-6 rounded-4xl">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="h-10 w-10 fill-current"
                             fill-rule="evenodd">
