@@ -72,9 +72,9 @@
             <p class="text-center text-2xl font-bold mb-6">
                 My website is under heavy development.
             </p>
-            <progress class="progress progress-primary h-8 w-4/5 mb-6" value="68" max="100"></progress>
+            <progress class="progress progress-primary h-8 w-4/5 mb-6" value="75" max="100"></progress>
             <p class="text-center text-xl mb-6">
-                %68 completed.
+                %75 completed.
             </p>
             <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
         </div>
