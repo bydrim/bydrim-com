@@ -38,6 +38,19 @@ onMounted(() => {
     --fade-in: fadeIn 500ms ease-in-out
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/**
+ * Disable smooth scrolling when reduced motion is preferred by the user
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body * {
     @apply transition-colors duration-200;
 }
@@ -47,16 +60,16 @@ body * {
         class="fixed inset-0 z-1 block blur-[3px] bg-[url(/bg.webp)] bg-no-repeat bg-fixed bg-cover bg-center bg-neutral animate-(--fade-in)">
     </div>
     <div id="background-cover" class="fixed inset-0 z-2 block h-full w-full bg-(--background-cover)"></div>
-    <div id="foreground" class="absolute h-full w-full flex flex-col z-9999 bg-transparent">
-        <div class="navbar shadow-md bg-transparent flex-none">
-            <a href="/" class="mx-4">
+    <div id="foreground" class="absolute w-full flex flex-col z-9999 bg-transparent">
+        <div class="navbar shadow-md flex-none fixed top-0 overflow-hidden z-9999 backdrop-blur-md">
+            <a href="#" rel="noopener" class="mx-4">
                 <BydrimIcon class="h-8 w-16 md:h-12 md:w-24 lg:h-16 lg:w-32 fill-current"></BydrimIcon>
             </a>
             <div class="flex-1"></div>
             <div class="flex-none">
                 <ul class="menu menu-horizontal px-1 items-center">
                     <!-- <li><a href=""></a></li> -->
-                    <li><a href="/projects" class="text-xl md:text-2xl lg:text-3xl">Projects</a></li>
+                    <li><a href="#projects" rel="noopener" class="text-xl md:text-2xl lg:text-3xl">Projects</a></li>
                     <li>
                         <label class="swap swap-rotate">
                             <!-- 'checked=false' => swap-off -->
@@ -82,8 +95,6 @@ body * {
                 </ul>
             </div>
         </div>
-        <main class="p-3 flex flex-col h-full overflow-y-auto">
-            <slot />
-        </main>
+        <slot />
     </div>
 </template>
