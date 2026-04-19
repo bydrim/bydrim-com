@@ -13,11 +13,11 @@
 }
 </style>
 <template>
-    <main class="w-full flex flex-col justify-start items-center">
+    <main class="w-full px-2 flex flex-col justify-start items-center">
         <div class="w-full flex flex-col justify-evenly items-center">
             <div class="h-screen flex flex-col justify-center items-center">
                 <div class="avatar">
-                    <div class="w-56 md:w-78 lg:w-96 rounded-full">
+                    <div class="w-56 lg:w-78 xl:w-96 rounded-full">
                         <img src="/profile.webp" />
                     </div>
                 </div>
@@ -30,10 +30,8 @@
                 </p>
                 <p class="text-center text-xl mb-6">
                     I am a Software Engineer with a strong background in developing complex business algorithms and
-                    managing
-                    large-scale financial systems. My experties lies in full-stack development with a focus on
-                    enterprise
-                    applications.
+                    managing large-scale financial systems. My experties lies in
+                    <span class="font-bold">full-stack development</span> with a focus on enterprise applications.
                 </p>
                 <p class="text-center text-xl mb-6">Based in Switzerland.</p>
                 <p class="text-center text-xl">
@@ -71,6 +69,7 @@
                         </button>
                     </a>
                 </p>
+                <!--
                 <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
                 <p class="text-center text-2xl font-bold mb-6">
                     My website is under heavy development.
@@ -80,6 +79,7 @@
                     %80 completed.
                 </p>
                 <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
+                -->
             </div>
         </div>
         <div class="w-full flex flex-col justify-start items-center-safe">
@@ -88,7 +88,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Java Blog Engine</h2>
                     <p>REST API for a blog where users can create drafts & publish articles with category and tags</p>
-                    <p>This project is <span class="italic font-bold">Still In Progress</span></p>
+                    <p>This project is <span class="italic font-bold">Work In Progress</span></p>
                     <p class="mt-2 font-bold text-lg">
                         <span class="bg-info text-info-content rounded p-1">Technologies:</span>
                         Spring, Spring Boot, Spring Data JPA, Java JWT, PostgreSQL, docker
