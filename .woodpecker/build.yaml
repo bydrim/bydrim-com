@@ -1,5 +1,7 @@
 when:
   - event: manual
+  - event: push
+    branch: main
 
 workspace:
   base: /woodpecker # default
