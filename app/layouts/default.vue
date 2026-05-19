@@ -50,17 +50,15 @@ html {
         scroll-behavior: auto;
     }
 }
-
-body * {
-    @apply transition-colors duration-200;
-}
 </style>
 <template>
     <div id="background"
-        class="fixed inset-0 z-1 block h-lvh blur-[3px] bg-[url(/bg.webp)] bg-no-repeat bg-fixed bg-cover bg-center bg-neutral animate-(--fade-in)">
+        class="transition-colors duration-200 fixed inset-0 z-1 block h-lvh blur-[3px] bg-[url(/bg.webp)] bg-no-repeat bg-fixed bg-cover bg-center bg-neutral animate-(--fade-in)">
     </div>
-    <div id="background-cover" class="fixed inset-0 z-2 block h-lvh w-full bg-(--background-cover)"></div>
-    <div id="foreground" class="absolute w-full z-9999 bg-transparent">
+    <div id="background-cover"
+        class="transition-colors duration-200 fixed inset-0 z-2 block h-lvh w-full bg-(--background-cover)">
+    </div>
+    <div id="foreground" class="transition-colors duration-200 absolute w-full z-9999 bg-transparent">
         <div class="navbar shadow-md flex-none fixed top-0 overflow-hidden z-9999 backdrop-blur-md">
             <a href="#" rel="noopener" class="mx-4">
                 <BydrimIcon class="h-8 w-16 md:h-12 md:w-24 lg:h-16 lg:w-32 fill-current"></BydrimIcon>
@@ -74,7 +72,7 @@ body * {
                         <label class="swap swap-rotate">
                             <!-- 'checked=false' => swap-off -->
                             <!-- 'checked=true' => swap-on -->
-                            <input type="checkbox" class="" value="" v-model="isLightTheme" />
+                            <input type="checkbox" v-model="isLightTheme" />
                             <!-- v-model="isLightTheme" -->
 
                             <!-- sun icon -->
