@@ -5,10 +5,10 @@
 @plugin "daisyui/theme" {
     name: "everforest-dark";
     default: false;
-    prefersdark: false;
     /* set as default dark mode (prefers-color-scheme:dark) */
-    color-scheme: dark;
+    prefersdark: false;
     /* color of browser-provided UI */
+    color-scheme: dark;
 
     --background-cover: oklch(0.25 0.0123 232.92 / 85%);
 
@@ -90,10 +90,10 @@
 @plugin "daisyui/theme" {
     name: "everforest-light";
     default: false;
-    prefersdark: false;
     /* not a dark mode theme */
-    color-scheme: light;
+    prefersdark: false;
     /* color of browser-provided UI */
+    color-scheme: light;
 
     --background-cover: oklch(0.85 0.0305 98.87 / 85%);
 
