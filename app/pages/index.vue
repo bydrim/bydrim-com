@@ -35,26 +35,32 @@ onMounted(() => {
                         <img src="/profile.webp" />
                     </div>
                 </div>
-                <p class="text-center text-2xl my-6">Burak Yildirim | Software Engineer</p>
-                <div id="arrow-post" class="rounded-full outline-3 outline-primary p-2 bg-base-100/30 backdrop-blur-md
+                <p class="text-center text-2xl my-6">Burak Yildirim</p>
+                <span class="text-rotate duration-6000 text-2xl">
+                    <span class="justify-items-center">
+                        <span>Fullstack Developer</span>
+                        <span>Opensource Contributor</span>
+                        <span>Software Engineer</span>
+                    </span>
+                </span>
+                <a id="arrow-post" href="#about" rel="noopener" class="rounded-full outline-3 outline-primary p-2 bg-base-100/30 backdrop-blur-md
                         animate-bounce absolute bottom-20 right-50.0 transition-opacity duration-300 ease-out">
                     <svg class="size-10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="flex flex-col items-center max-w-4xl">
+            <div id="about" class="flex flex-col items-center max-w-4xl scroll-mt-20">
                 <p class="text-center text-3xl my-6">Hi, I am Burak!</p>
                 <p class="text-center text-xl mb-6">
                     I go by <span class="font-extrabold italic">bydrim</span> online.
                 </p>
                 <p class="text-center text-xl mb-6">
-                    I am a Software Engineer with a strong background in developing complex business algorithms and
-                    managing large-scale financial systems. My experties lies in
-                    <span class="font-bold">full-stack development</span> with a focus on enterprise applications.
+                    I am a <span class="font-bold">Fullstack Software Engineer</span> with a strong background in
+                    developing complex business algorithms and managing large-scale financial systems.
                 </p>
-                <p class="text-center text-xl mb-6">Based in Switzerland.</p>
+                <p class="text-center text-xl mb-6">I am based in Switzerland.</p>
                 <p class="text-center text-xl">
                     You can find me from the links below.
                 </p>
@@ -90,17 +96,6 @@ onMounted(() => {
                         </button>
                     </a>
                 </p>
-                <!--
-                <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
-                <p class="text-center text-2xl font-bold mb-6">
-                    My website is under heavy development.
-                </p>
-                <progress class="progress progress-primary h-8 w-4/5 mb-6" value="80" max="100"></progress>
-                <p class="text-center text-xl mb-6">
-                    %80 completed.
-                </p>
-                <div class="h-6 bg-neutral-950 mb-6 w-full hazard-background"></div>
-                -->
             </div>
         </div>
         <div class="w-full flex flex-col justify-start items-center-safe">

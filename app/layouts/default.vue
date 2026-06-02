@@ -67,6 +67,7 @@ html {
             <div class="flex-none">
                 <ul class="menu menu-horizontal px-1 items-center">
                     <!-- <li><a href=""></a></li> -->
+                    <li><a href="#about" rel="noopener" class="text-xl md:text-2xl lg:text-3xl">About</a></li>
                     <li><a href="#projects" rel="noopener" class="text-xl md:text-2xl lg:text-3xl">Projects</a></li>
                     <li>
                         <label class="swap swap-rotate">
