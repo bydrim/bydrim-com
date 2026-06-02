@@ -1,3 +1,17 @@
+<script setup lang="ts">
+onMounted(() => {
+    document.addEventListener('scroll', (event) => {
+        // console.log(window.scrollY);
+        const arrowPost = document.getElementById('arrow-post');
+        if (window.scrollY > 65) {
+            arrowPost.style.opacity = 0;
+        }
+        else {
+            arrowPost.style.opacity = 100;
+        }
+    });
+});
+</script>
 <style>
 @reference "~/assets/css/main.css";
 
@@ -15,13 +29,20 @@
 <template>
     <main class="w-full px-2 flex flex-col justify-start items-center">
         <div class="w-full flex flex-col justify-evenly items-center">
-            <div class="h-screen flex flex-col justify-center items-center">
+            <div class="h-screen flex flex-col justify-center items-center relative">
                 <div class="avatar">
                     <div class="w-56 lg:w-78 xl:w-96 rounded-full">
                         <img src="/profile.webp" />
                     </div>
                 </div>
                 <p class="text-center text-2xl my-6">Burak Yildirim | Software Engineer</p>
+                <div id="arrow-post" class="rounded-full outline-3 outline-primary p-2 bg-base-100/30 backdrop-blur-md
+                        animate-bounce absolute bottom-20 right-50.0 transition-opacity duration-300 ease-out">
+                    <svg class="size-10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
             </div>
             <div class="flex flex-col items-center max-w-4xl">
                 <p class="text-center text-3xl my-6">Hi, I am Burak!</p>
