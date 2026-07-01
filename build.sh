@@ -10,8 +10,15 @@ trap 'handle_error $LINENO' ERR
 
 echo "## Project building process is starting."
 
-echo "## Installing pnpm 10.28.1 .."
-npm install -g pnpm@10.28.1
+echo "## Checking pnpm .."
+pnpmVer="11.5.1"
+if command -v pnpm >/dev/null 2>&1 && [ $pnpmVer == $(pnpm --version) ]
+then
+    echo "## pnpm v$pnpmVer is found, skipping pnpm install .."
+else
+    echo "## pnpm v$pnpmVer is not found, installing pnpm .."
+    npm install -g pnpm@$pnpmVer
+fi
 
 echo "## Installing project dependencies with pnpm .."
 pnpm i --frozen-lockfile
@@ -38,6 +45,7 @@ if [[ -h ./outputs/latest ]]; then
     rm -f ./outputs/latest
 fi
 ln -sr "./outputs/$timestamp" ./outputs/latest
-echo "## Symbolic link created."
+echo "## Symbolic link has created."
 
-echo "\n## Project building completed."
+echo ""
+echo "## Project building has completed."
